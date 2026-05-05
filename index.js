@@ -256,5 +256,9 @@ console.log(`Created by IT Knight`);
 
     }
 
+    document.querySelector('#offer').onclick = () => {
+        window.open('./documents/oferta.pdf', '_blank');
+    }
+
 })();
 
