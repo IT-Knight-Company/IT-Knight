@@ -1,0 +1,347 @@
+@media (max-width: 768px) {
+
+    .fix-content {
+        width: var(--content-width-mobile);
+        overflow-x: hidden;
+    }
+
+    @media all { /* Цветы */
+        .fix-content .flowers {
+            width: 768px;
+        }
+
+        .fix-content .flowers img:nth-child(1) {
+            transform: rotate(-36deg) scale(0.7);
+            top: 2400px;
+            right: -140px;
+        }
+
+        .fix-content .flowers img:nth-child(2) {
+            transform: rotate(-36deg) scale(0.7);
+            top: 4350px;
+            right: -140px;
+        }   
+    }
+
+    @media all { /* Все что связанно с меню */
+        .menu .l {
+            width: 100%;
+            justify-content: start;
+            padding-left: 100px;
+        }
+
+        .menu .r {
+            width: 0px;
+        }
+
+        .menu .r button {
+            display: none;
+        }
+
+        .menu .center {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .menu .r .color-button {
+            display: block;
+            font-size: 40px;
+            padding: 15px 35px 15px 35px;
+        }
+
+        .menu .mobile {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            background: rgb(0, 0, 0, 0);
+        }
+
+        .menu .open-menu {
+            position: relative;
+            min-width: 70px;
+            min-height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .menu .open-menu p {
+            border-radius: 2.5px;
+            width: 100%;
+            height: 5px;
+            background: white;
+            opacity: 0.8;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 450px;
+            height: 100%;
+            background: black;
+            z-index: 100;
+            background: rgb(6, 19, 31, 0.9);
+            border-radius: 0px 40px 40px 0px;
+            border-right: 1px solid #588091;
+            backdrop-filter: blur(3px);
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .mobile-menu button {
+            background: rgb(0, 0, 0, 0);
+            font-size: 45px;
+            padding: 50px 0px 25px 50px;
+            text-align: left;
+        }
+
+        .mobile-menu .menu-close-button {
+            padding: 30px 30px 30px 0px;
+            display: flex;
+            justify-content: end;
+        }
+        .mobile-menu img {
+            height: 70px;
+        }
+
+        .menu .l img {
+            height: 50px;
+        }
+
+    }
+
+    @media all { /* Генеральный блок */
+
+        .general-top {
+            background-size: auto 100%;
+            background-position: -1225px 0px;
+            height: 1200px;
+            border-radius: 40px;
+            position: relative;
+        }
+
+        .general-top .general-content {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            padding-left: 25px;
+            margin-bottom: 25px;
+        }
+
+        .general-top .button-content {
+            margin-top: 25px;
+        }
+
+        .general-top .text-content {
+            font-size: 53px;
+        }
+
+        .general-top button {
+            font-size: 45px;
+            border-radius: 20px;
+            padding: 10px 30px 10px 30px;
+        }
+
+    }
+
+    @media all { /* Блок о нас */
+
+        .information {
+            width: 100%;
+            padding: 0px 20px 0px 20px;
+        }
+
+        .information .information-content {
+            margin-top: 40px;
+            flex-direction: column;
+        }
+
+        .information .information-left {
+            justify-content: space-between;
+        }
+
+        .information .information-left ._img_ {
+            max-width: 20px;
+        }
+
+        .information .information-text .information-text-1 {
+            font-size: 35px;
+            line-height: 40px;
+        }
+
+        .information .information-text .information-text-2 {
+            font-size: 30px;
+        }
+
+        .information .information-right {
+            margin-top: 50px;
+            width: 70%;
+        }
+
+        .information .information-right-text {
+            font-size: 35px;
+            line-height: 42px;
+        }
+
+        .information .information-right-block p {
+            font-size: 35px;
+            line-height: 42px;
+        }
+
+        .information .information-right-block button {
+            font-size: 40px;
+            padding: 10px 45px 10px 45px;
+        }
+
+    }
+
+    @media all { /* Новосной блок */
+        .news {
+            padding: 0px 20px 0px 20px;
+        }
+        .news .n {
+            width: 100%;
+        }
+        .news .news-content {
+            width: 100%;
+            max-width: 100%;
+        }
+        .news .news-content .news-block {
+            min-width: 720px;
+            min-height: 405.260px;
+        }
+
+        .news .news-button button {
+            width: 50%;
+            height: 70%;
+        }
+
+        .news .news-content .news-block {
+            justify-content:left;
+        }
+
+        .news .news-content .news-block .news-block-content {
+            width: 100%;
+            align-items: start;
+            margin-left: 30px;
+        }
+
+        .news .news-content .news-block .news-block-content-name {
+            text-align: left;
+            font-size: 30px;
+        }
+
+        .news .news-content .news-block .news-block-content-info {
+            text-align: left;
+            margin: 15px 0px 0px 0px;
+            font-size: 25px;
+            line-height: 25px;
+        }
+
+        .news .news-content .news-block button {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            margin: 0px 30px 40px 0px;
+            font-size: 30px;
+        }
+
+        .news .news-content {
+            margin-top: 40px;
+        }
+
+    }
+
+    @media all { /* Блок Проектов */
+        .projects {
+            width: 100%;
+            padding: 0px 20px 0px 20px;
+        }
+
+        .projects .projects-content {
+            flex-direction: column;
+        }
+
+        .projects .projects-content .projects-line {
+            margin-right: 0px !important;
+            justify-content: space-between;
+            padding-bottom: 120px;
+        }
+
+        .projects .projects-content .projects-line:last-child {
+            padding-bottom: 0px;
+        }
+
+        /*
+        width: 363px;    =   220
+        height: 310px;
+        */
+
+        .projects .projects-content .projects-line .projects-block {
+            margin-right: 0px !important;
+            width: 350px;
+            height: 320px;
+        }
+
+        .projects .projects-content .projects-line .projects-block .projects-ava {
+            width: 200px;
+            height: 200px;
+        }
+
+        .projects .projects-content .projects-line .projects-block button {
+            font-size: 35px;
+            padding: 15px 50px 15px 50px;
+            border-radius: 50px;
+        }
+
+        .projects .projects-content .projects-line .projects-block button:hover {
+            padding: 15px 50px 15px 50px;
+        }
+
+        .projects .projects-content .projects-line .projects-block .projects-text {
+            font-size: 30px;
+        }
+    }
+
+    @media all { /* Блок услуг */
+        .services {
+            width: 100%;
+            padding: 0px 20px 0px 20px;
+        }
+        .services .services-subcategory {
+            padding-left: 30px;
+        }
+        .services .services-prices {
+            padding-left: 60px;
+        }
+    }
+
+    @media all {
+        .official-information {
+            width: calc(768px - 40px);
+            margin-bottom: 20px;
+            flex-direction: column;
+        }
+
+        .official-information .l {
+            width: 100%;
+            order: 2;
+        }
+
+        .official-information .r {
+            order: 1;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .official-information .r button {
+            text-align: left;
+            margin: 15px 0px 15px 0px;
+        }
+    }
+
+}

@@ -1,0 +1,384 @@
+<!-- Created by IT Knight -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index-mobile.css">
+
+    <link rel="icon" type="image/svg+xml" href="./icon.svg">
+
+    <title>IT Knight</title>
+</head>
+<body>
+    <div class="content">
+
+        <div class="background"></div> <!-- Задняя картинка -->
+
+        <div class="fix-content"> <!-- Блок в котором весь контент -->
+
+            <div class="flowers">
+                <img src="./background-1.png" alt="i1">
+                <img src="./background-2.png" alt="i2">
+            </div>
+
+            <div class="mobile-menu" id="mobile-menu"> <!-- Меню для телефонов -->
+                <button class="menu-close-button" id="menu-close-button"><img src="./menu-close-button.svg" alt="close button"></button>
+                <button id="button-info-1">О нас</button>
+                <button id="button-info-2">Новости</button>
+                <button id="button-info-3">Проекты</button>
+                <button id="button-info-4">Услуги</button>
+            </div>
+
+            <div class="menu" id="menu"> <!-- Меню для пк и частично для телефонов -->
+
+                <div class="center"> <!-- Центральная ширина меню -->
+
+                    <button class="mobile"> <!-- Кнопка открытия меню для телефонов -->
+                        <div class="open-menu" id="open-menu"><p></p><p></p><p></p></div>
+                    </button>
+                    
+                    <div class="l"> <!-- Левая часть меню с логотипом в виде картинки -->
+                        <img src="./general-top-logo.svg" alt="Лого">
+                    </div>
+
+                    <div class="r"> <!-- Левая часть меню с кнопками-->
+                        <button id="button-info-1">О нас<p></p></button>
+                        <button id="button-info-2">Новости<p></p></button>
+                        <button id="button-info-3">Проекты<p></p></button>
+                        <button id="button-info-4">Услуги<p></p></button>
+                        <!-- Эта кнопка видна на телефонах остальные убираются -->
+                        <button class="color-button">Связаться</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="general-top">  <!-- Главный блок в background картинка -->
+
+                <div class="general-content"> <!-- Тут весь текст и кнопки -->
+
+                    <div class="text-content">Присоединяйтесь<br>к Битве<br>за инновации</div>
+                    
+                    <div class="button-content">
+                        <button style="background: rgb(255, 0, 0, 0.5);">
+                            <img src="./general-top-YouTube.svg" alt="YouTube logo">
+                            YouTube
+                        </button>
+                        <button style="background: rgb(40, 169, 234, 0.5);">
+                            <img src="./general-top-Telegram.svg" alt="Telegram logo">
+                            Telegram
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="information">
+                <div class="n" id="scroll-information">О нас</div>
+                <div class="information-content">
+                    <div class="information-left">
+                        <div class="information-text">
+                            <div class="information-text-1">Страсть<br>технологии<br>ответственность</div>
+                            <div class="information-text-2">
+                                <p>Мы команда для которых качество наших IT-продуктов наша страсть.</p>
+                                <p>Наша миссия создавать решения, которые станут эталоном надёжности и инноваций в истории технологий.</p>
+                                <p>Мы верим, что доверие клиентов строится на безупречной работе, прозрачности и ответственности.</p>
+                            </div>
+                        </div>
+                        <div class="_img_">
+                            <img src="./information.svg" alt="information-logo">
+                        </div>
+                    </div>
+
+                    <div class="information-right">
+                        <div class="information-right-text">Технологии с заботой о качестве</div>
+                        <div class="information-right-block">
+                            <div class="information-right-text-max">Наши услуги</div>
+                            <p>Создаем со страстью и ответственностью</p>
+                            <button id="button-watch">Посмотреть</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="n" id="scroll-news">Новости</div>
+                <div class="news-content">
+                    <div class="news-button">
+                        <button id="news-left"></button>
+                        <button id="news-right"></button>
+                    </div>
+                    <div class="news-scroll" id="news-scroll">
+                        <div class="news-block" id="news-block">
+                            <div class="news-block-content">
+                                <img src="./news-1.jpg" alt="Наша нейросеть">
+                                <div class="news-block-content-name">Наша нейросеть</div>
+                                <div class="news-block-content-info">Создали для вас бесплатную нейросеть для работы!</div>
+                                <button>Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="news-block" id="news-block"></div>
+                        <div class="news-block" id="news-block"></div>
+                    </div>
+                </div>
+                <div class="news-navigator" id="news-navigator"></div>
+                
+            </div>
+
+            <div class="projects">
+                <div class="n" id="scroll-projects">Проекты</div>
+                <div class="projects-content">
+                    <div class="projects-line">
+                        <div class="projects-block" style="background: rgb(53, 72, 154, 0.25);">
+                            <div class="projects-ava">
+                                <img src="./projects-1.jpg" alt="Наша нейросеть">
+                            </div>
+                            <div class="projects-text">Наша нейросеть</div>
+                            <button style="background: rgb(63, 46, 83, 0.7);">Подробнее</button>
+                        </div>
+                        <div class="projects-block">
+                            <div class="projects-ava"></div>
+                            <div class="projects-text"></div>
+                            <button style="opacity: 0;">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="projects-line">
+                        <div class="projects-block">
+                            <div class="projects-ava"></div>
+                            <div class="projects-text"></div>
+                            <button style="opacity: 0;">Подробнее</button>
+                        </div>
+                        <div class="projects-block">
+                            <div class="projects-ava"></div>
+                            <div class="projects-text"></div>
+                            <button style="opacity: 0;">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services">
+
+                <div class="n" id="scroll-services">Услуги</div>
+                <div class="services-category">Веб разработка</div>
+
+                <div class="services-subcategory"><p></p>Дизайн</div>
+                <div class="services-prices">
+                    <div class="l"><p></p>UI/UX дизайн (прототипы)</div>
+                    <div class="r"><p>≈</p>15 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Лендинг (одностраничный) дизайн</div>
+                    <div class="r"><p>≈</p>25 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Многостраничный дизайн (корпоративный)</div>
+                    <div class="r"><p>≈</p>50 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Интернет-магазин дизайн</div>
+                    <div class="r"><p>≈</p>40 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Мобильное приложение дизайн</div>
+                    <div class="r"><p>≈</p>35 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Редизайн сайта</div>
+                    <div class="r"><p>≈</p>30 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Адаптивный дизайн</div>
+                    <div class="r"><p>≈</p>10 000 ₽</div>
+                </div>
+
+                <div class="services-subcategory"><p></p>Фронтенд (Верстка)</div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Верстка лендинга (HTML/CSS/JS)</div>
+                    <div class="r"><p>≈</p>15 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Верстка многостраничного сайта</div>
+                    <div class="r"><p>≈</p>30 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Верстка интернет-магазина</div>
+                    <div class="r"><p>≈</p>35 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Адаптивная верстка</div>
+                    <div class="r"><p>≈</p>10 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Анимации и интерактив</div>
+                    <div class="r"><p>≈</p>8 000 ₽</div>
+                </div>
+
+                <div class="services-subcategory"><p></p>Фронтенд (Верстка)</div>
+                <div class="services-prices">
+                    <div class="l"><p></p>WordPress установка + настройка</div>
+                    <div class="r"><p>≈</p>10 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Tilda / конструктор</div>
+                    <div class="r"><p>≈</p>5 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Bitrix / 1С-Битрикс</div>
+                    <div class="r"><p>≈</p>30 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>ModX / OpenCart</div>
+                    <div class="r"><p>≈</p>25 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Кастомная CMS (самописная)</div>
+                    <div class="r"><p>≈</p>60 000 ₽</div>
+                </div>
+
+                <div class="services-subcategory"><p></p>Продвижение и SEO</div>
+                <div class="services-prices">
+                    <div class="l"><p></p>SEO-оптимизация (базовая)</div>
+                    <div class="r"><p>≈</p>15 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Технический аудит сайта</div>
+                    <div class="r"><p>≈</p>10 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Настройка метатегов и структуры</div>
+                    <div class="r"><p>≈</p>8 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Ускорение сайта (кэш, сжатие)</div>
+                    <div class="r"><p>≈</p>7 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Аналитика (Яндекс.Метрика / GA)</div>
+                    <div class="r"><p>≈</p>5 000 ₽</div>
+                </div>
+
+                <div class="services-category">Платформы и мессенджеры</div>
+
+                <div class="services-subcategory"><p></p>Создание бота</div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Telegram бот (базовый)</div>
+                    <div class="r"><p>≈</p>3 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Telegram бот (средней сложности)</div>
+                    <div class="r"><p>≈</p>15 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Telegram бот (средней сложности)</div>
+                    <div class="r"><p>≈</p>40 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>WhatsApp бот</div>
+                    <div class="r"><p>≈</p>20 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Viber бот</div>
+                    <div class="r"><p>≈</p>10 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Бот для ВК</div>
+                    <div class="r"><p>≈</p>3 500 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Бот для MAX</div>
+                    <div class="r"><p>≈</p>10 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Discord бот</div>
+                    <div class="r"><p>≈</p>15 000 ₽</div>
+                </div>
+
+                <div class="services-category">ПАРСИНГ ДАННЫХ</div>
+                <div class="services-subcategory"><p></p>Типы парсинга</div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Парсинг одного сайта (базовый)</div>
+                    <div class="r"><p>≈</p>3 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Парсинг интернет-магазина (каталог)</div>
+                    <div class="r"><p>≈</p>6 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Парсинг маркетплейса (Ozon/WB/Yandex.Market)</div>
+                    <div class="r"><p>≈</p>10 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Парсинг соцсетей (посты/комментарии)</div>
+                    <div class="r"><p>≈</p>7 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Парсинг поисковой выдачи</div>
+                    <div class="r"><p>≈</p>5 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Парсинг прайс-листов (Excel/PDF)</div>
+                    <div class="r"><p>≈</p>3 000 ₽</div>
+                </div>
+
+                <div class="services-category">ИНТЕГРАЦИЯ AI В ПРОДУКТЫ</div>
+
+                <div class="services-subcategory"><p></p>Типы AI-интеграций</div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Чат-бот с ИИ (простой, готовое API)</div>
+                    <div class="r"><p>≈</p>15 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Чат-бот с ИИ + база знаний (RAG)</div>
+                    <div class="r"><p>≈</p>50 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>ИИ-ассистент с действиями (API интеграции)</div>
+                    <div class="r"><p>≈</p>80 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>ИИ-агент поддержки (полноценный)</div>
+                    <div class="r"><p>≈</p>150 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Генерация контента (тексты/изображения)</div>
+                    <div class="r"><p>≈</p>30 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Автоперевод и локализация</div>
+                    <div class="r"><p>≈</p>20 000 ₽</div>
+                </div>
+                <div class="services-prices">
+                    <div class="l"><p></p>Аналитика и суммаризация данных</div>
+                    <div class="r"><p>≈</p>35 000 ₽</div>
+                </div>
+                
+
+            </div>
+
+            <div class="official-information">
+                <div class="l">
+                    <div class="number">+7 995 016-95-92</div>
+                    <div class="i">
+                        <p>Давыдов Денис</p>
+                        <p>ИНН: 345704057990</p>
+                        <!--<p>308004, г. Белгород, ул. Губкина 44В</p>-->
+                    </div>
+                </div>
+                <div class="r">
+                    <button>Возврат</button>
+                    <button>Оферта</button>
+                    <button>Политика обработки персональных данных</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
